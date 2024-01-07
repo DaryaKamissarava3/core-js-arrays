@@ -23,7 +23,7 @@
 function getIntervalArray(start, end) {
   const result = [];
 
-  for (let i = start; i <= end; i++) {
+  for (let i = start; i <= end; i += 1) {
     result.push(i);
   }
 
@@ -44,10 +44,10 @@ function getIntervalArray(start, end) {
  *    sumArrays([-1, 0, 1], [1, 2, 3, 4]) => [0, 2, 4, 4]
  */
 function sumArrays(arr1, arr2) {
-  let finalArray = [];
+  const finalArray = [];
   const maxArrLength = Math.max(arr1.length, arr2.length);
 
-  for (let i = 0; i < maxArrLength; i++) {
+  for (let i = 0; i < maxArrLength; i += 1) {
     finalArray[i] = (arr1[i] || 0) + (arr2[i] || 0);
   }
 
